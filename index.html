@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Acceptance Rate Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+    <div class="container mx-auto p-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg overflow-hidden md:max-w-5xl">
+            <div class="md:flex flex-col">
+                <div class="p-3">
+                    <h2 class="block text-lg font-semibold text-gray-800 uppercase mb-2">Enter your scores</h2>
+                    <form id="scoreForm" class="space-y-4">
+                        <div id="scoreInputs" class="grid md:grid-cols-2 gap-4">
+                            <!-- Dynamically generated score inputs will go here -->
+                        </div>
+                        <button type="button" id="submit" class="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-700 hover:shadow-none">
+                            Confirm university acceptance rate
+                        </button>
+                    </form>
+                </div>
+                <div id="result" class="mt-6 p-3">
+                    <!-- Results will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
